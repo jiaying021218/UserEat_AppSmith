@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 580,
+          "bottomRow": 720,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -31,7 +31,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 15,
+              "topRow": 29,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -119,7 +119,7 @@
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "get_orders_table",
+              "widgetName": "get_orders_6_table",
               "defaultPageSize": 0,
               "columnOrder": [
                 "ETA",
@@ -135,7 +135,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 58,
+              "bottomRow": 72,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -171,7 +171,7 @@
                   "label": "ETA",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ETA\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ETA\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -200,7 +200,7 @@
                   "label": "customer_address_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"customer_address_id\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"customer_address_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -229,7 +229,7 @@
                   "label": "customer_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"customer_id\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"customer_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -258,7 +258,7 @@
                   "label": "driver_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"driver_id\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"driver_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -287,7 +287,7 @@
                   "label": "order_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_id\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -316,7 +316,7 @@
                   "label": "order_status",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_status\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_status\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -345,7 +345,7 @@
                   "label": "order_time",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_time\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_time\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -374,7 +374,7 @@
                   "label": "price",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"price\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"price\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -403,7 +403,7 @@
                   "label": "restaurant_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"restaurant_id\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"restaurant_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -432,7 +432,7 @@
                   "label": "restaurant_location_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"restaurant_location_id\"]))}}",
+                  "computedValue": "{{get_orders_6_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"restaurant_location_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -445,7 +445,7 @@
               "textSize": "0.875rem",
               "widgetId": "c7d65wwwzh",
               "minWidth": 450,
-              "tableData": "{{get_orders.data}}",
+              "tableData": "{{get_orders_6.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -461,8 +461,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Orders_get_orders",
-              "name": "get_orders",
+              "id": "Orders_get_orders_6",
+              "name": "get_orders_6",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
