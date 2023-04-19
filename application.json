@@ -1,11 +1,19 @@
 {
   "pages": [
     {
-      "id": "Orders",
+      "id": "Burger Express Order",
       "isDefault": true
     },
     {
-      "id": "Restaurants",
+      "id": "Ben-1 Restaurants in NY",
+      "isDefault": false
+    },
+    {
+      "id": "Burger Express Employees",
+      "isDefault": false
+    },
+    {
+      "id": "Customer Place Order",
       "isDefault": false
     }
   ],

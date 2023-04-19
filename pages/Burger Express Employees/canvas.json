@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Restaurants",
-    "slug": "restaurants",
+    "name": "Burger Express Employees",
+    "slug": "burger-express-employees",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 600,
+          "bottomRow": 400,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -30,7 +30,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 10,
+              "topRow": 12,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -49,19 +49,19 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.category_id.computedValue"
+                  "key": "primaryColumns.Email.computedValue"
                 },
                 {
-                  "key": "primaryColumns.email.computedValue"
+                  "key": "primaryColumns.First_Name.computedValue"
                 },
                 {
-                  "key": "primaryColumns.name.computedValue"
+                  "key": "primaryColumns.Last_Name.computedValue"
                 },
                 {
-                  "key": "primaryColumns.phone.computedValue"
+                  "key": "primaryColumns.Phone.computedValue"
                 },
                 {
-                  "key": "primaryColumns.restaurant_id.computedValue"
+                  "key": "primaryColumns.Title.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -99,22 +99,22 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681514656589,
+              "columnUpdatedAt": 1681765666286,
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "get_restaurants_table",
+              "widgetName": "get_employees_table",
               "defaultPageSize": 0,
               "columnOrder": [
-                "category_id",
-                "email",
-                "name",
-                "phone",
-                "restaurant_id"
+                "Email",
+                "First_Name",
+                "Last_Name",
+                "Phone",
+                "Title"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 60,
+              "bottomRow": 40,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -126,16 +126,16 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "category_id": {
+                "Email": {
                   "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "originalId": "category_id",
-                  "id": "category_id",
-                  "alias": "category_id",
+                  "originalId": "Email",
+                  "id": "Email",
+                  "alias": "Email",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "number",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -147,21 +147,21 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "category_id",
+                  "label": "Email",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_restaurants_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"category_id\"]))}}",
+                  "computedValue": "{{get_employees_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Email\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "email": {
+                "First_Name": {
                   "allowCellWrapping": false,
                   "index": 1,
                   "width": 150,
-                  "originalId": "email",
-                  "id": "email",
-                  "alias": "email",
+                  "originalId": "First Name",
+                  "id": "First_Name",
+                  "alias": "First Name",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -176,21 +176,21 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "email",
+                  "label": "First Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_restaurants_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"email\"]))}}",
+                  "computedValue": "{{get_employees_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"First Name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "name": {
+                "Last_Name": {
                   "allowCellWrapping": false,
                   "index": 2,
                   "width": 150,
-                  "originalId": "name",
-                  "id": "name",
-                  "alias": "name",
+                  "originalId": "Last Name",
+                  "id": "Last_Name",
+                  "alias": "Last Name",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -205,21 +205,21 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "name",
+                  "label": "Last Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_restaurants_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+                  "computedValue": "{{get_employees_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Last Name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "phone": {
+                "Phone": {
                   "allowCellWrapping": false,
                   "index": 3,
                   "width": 150,
-                  "originalId": "phone",
-                  "id": "phone",
-                  "alias": "phone",
+                  "originalId": "Phone",
+                  "id": "Phone",
+                  "alias": "Phone",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -234,24 +234,24 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "phone",
+                  "label": "Phone",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_restaurants_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"phone\"]))}}",
+                  "computedValue": "{{get_employees_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Phone\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "restaurant_id": {
+                "Title": {
                   "allowCellWrapping": false,
                   "index": 4,
                   "width": 150,
-                  "originalId": "restaurant_id",
-                  "id": "restaurant_id",
-                  "alias": "restaurant_id",
+                  "originalId": "Title",
+                  "id": "Title",
+                  "alias": "Title",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "number",
+                  "columnType": "text",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -263,23 +263,23 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "restaurant_id",
+                  "label": "Title",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{get_restaurants_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"restaurant_id\"]))}}",
+                  "computedValue": "{{get_employees_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Title\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 }
               },
-              "key": "j43ekkgzkq",
+              "key": "c8oefhip9a",
               "canFreezeColumn": true,
               "isDeprecated": false,
               "rightColumn": 63,
               "textSize": "0.875rem",
-              "widgetId": "2yn6nq8fb9",
+              "widgetId": "31d4yt8sax",
               "minWidth": 450,
-              "tableData": "{{get_restaurants.data}}",
+              "tableData": "{{get_employees.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -295,8 +295,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Restaurants_get_restaurants",
-              "name": "get_restaurants",
+              "id": "Burger Express Employees_get_employees",
+              "name": "get_employees",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
@@ -306,7 +306,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Restaurants",
+        "id": "Burger Express Employees",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -317,5 +317,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "6439dec4045dab1e3f189e52_6439e061045dab1e3f189e59"
+  "gitSyncId": "643db3b19828c03524d58463_643db4ea9828c03524d5846c"
 }

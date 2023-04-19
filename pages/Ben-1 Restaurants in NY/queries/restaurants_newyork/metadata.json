@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_restaurants",
+    "name": "restaurants_newyork",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/r/restaurants"
+        "url": "web:4000/b/restaurants/new_york"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Restaurants",
+    "pageId": "Ben-1 Restaurants in NY",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Restaurants_get_restaurants",
+  "id": "Ben-1 Restaurants in NY_restaurants_newyork",
   "deleted": false,
   "gitSyncId": "6439dec4045dab1e3f189e52_6439e087045dab1e3f189e5b"
 }
