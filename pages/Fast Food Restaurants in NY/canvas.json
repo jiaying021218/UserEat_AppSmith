@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Restaurants in NY",
-    "slug": "restaurants-in-ny",
+    "name": "Fast Food Restaurants in NY",
+    "slug": "fast-food-restaurants-in-ny",
     "layouts": [
       {
         "viewMode": false,
@@ -13,24 +13,77 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 420,
+          "bottomRow": 380,
           "containerStyle": "none",
-          "snapRows": 59,
+          "snapRows": 58,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
           "version": 77,
-          "minHeight": 610,
+          "minHeight": 600,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
             {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "widgetName": "back_button",
+              "onClick": "{{navigateTo('HomePage', {}, 'SAME_WINDOW')}}",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 33,
+              "bottomRow": 37,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 48,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Back",
+              "isDisabled": false,
+              "key": "ucbxjzib1c",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "isDefaultClickDisabled": true,
+              "widgetId": "ehqami0c6f",
+              "minWidth": 120,
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "hug",
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            },
+            {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 15,
+              "topRow": 16,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -62,9 +115,6 @@
                 },
                 {
                   "key": "primaryColumns.Zip.computedValue"
-                },
-                {
-                  "key": "primaryColumns.Category.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -102,24 +152,23 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681858909686,
-              "originalBottomRow": 39,
+              "columnUpdatedAt": 1681935741139,
+              "originalBottomRow": 34,
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "restaurants_newyork_table",
+              "widgetName": "restaurant_ny_fastfood_table",
               "defaultPageSize": 0,
               "columnOrder": [
-                "Restaurant_Name",
-                "Category",
                 "Address",
                 "City",
+                "Restaurant_Name",
                 "State",
                 "Zip"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 38,
+              "bottomRow": 33,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -155,7 +204,7 @@
                   "label": "Address",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{restaurants_newyork_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Address\"]))}}",
+                  "computedValue": "{{restaurant_ny_fastfood_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Address\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -184,7 +233,7 @@
                   "label": "City",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{restaurants_newyork_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"City\"]))}}",
+                  "computedValue": "{{restaurant_ny_fastfood_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"City\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -213,7 +262,7 @@
                   "label": "Restaurant Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{restaurants_newyork_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Restaurant Name\"]))}}",
+                  "computedValue": "{{restaurant_ny_fastfood_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Restaurant Name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -242,7 +291,7 @@
                   "label": "State",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{restaurants_newyork_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"State\"]))}}",
+                  "computedValue": "{{restaurant_ny_fastfood_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"State\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -271,49 +320,20 @@
                   "label": "Zip",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{restaurants_newyork_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Zip\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "Category": {
-                  "allowCellWrapping": false,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "Category",
-                  "id": "Category",
-                  "alias": "Category",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "Category",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{restaurants_newyork_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Category\"]))}}",
+                  "computedValue": "{{restaurant_ny_fastfood_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Zip\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 }
               },
-              "key": "j43ekkgzkq",
+              "key": "peelqy0lpw",
               "canFreezeColumn": true,
               "isDeprecated": false,
               "rightColumn": 64,
               "textSize": "0.875rem",
-              "widgetId": "2yn6nq8fb9",
+              "widgetId": "txjec37eq1",
               "minWidth": 450,
-              "tableData": "{{restaurants_newyork.data}}",
+              "tableData": "{{get_fastfood.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -321,12 +341,12 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 16,
+              "originalTopRow": 17,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
             {
-              "widgetName": "restaurants_newyork_text",
+              "widgetName": "restaurants_ny_fastfood_text",
               "displayName": "Text",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "searchTags": [
@@ -334,8 +354,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 11,
-              "bottomRow": 15,
+              "topRow": 12,
+              "bottomRow": 16,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -358,13 +378,13 @@
               ],
               "shouldTruncate": false,
               "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "text": "Restaurants In New York",
+              "text": "Fast Food Restaurants in New York\n",
               "key": "mnjj41vrxr",
               "isDeprecated": false,
-              "rightColumn": 16,
+              "rightColumn": 22,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
-              "widgetId": "ikqcan0t84",
+              "widgetId": "yiba7ffema",
               "minWidth": 450,
               "isVisible": true,
               "fontStyle": "BOLD",
@@ -374,73 +394,20 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 11,
+              "originalTopRow": 12,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 16,
+              "originalBottomRow": 17,
               "fontSize": "1rem",
               "minDynamicHeight": 4
-            },
-            {
-              "resetFormOnClick": false,
-              "boxShadow": "none",
-              "widgetName": "back_button",
-              "onClick": "{{navigateTo('HomePage', {}, 'SAME_WINDOW')}}",
-              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-              "displayName": "Button",
-              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-              "searchTags": [
-                "click",
-                "submit"
-              ],
-              "topRow": 38,
-              "bottomRow": 42,
-              "parentRowSpace": 10,
-              "type": "BUTTON_WIDGET",
-              "hideCard": false,
-              "animateLoading": true,
-              "parentColumnSpace": 12.5625,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onClick"
-                }
-              ],
-              "leftColumn": 48,
-              "dynamicBindingPathList": [
-                {
-                  "key": "buttonColor"
-                },
-                {
-                  "key": "borderRadius"
-                }
-              ],
-              "text": "Back",
-              "isDisabled": false,
-              "key": "ucbxjzib1c",
-              "isDeprecated": false,
-              "rightColumn": 64,
-              "isDefaultClickDisabled": true,
-              "widgetId": "9qmsvgpt37",
-              "minWidth": 120,
-              "isVisible": true,
-              "recaptchaType": "V3",
-              "version": 1,
-              "parentId": "0",
-              "renderMode": "CANVAS",
-              "isLoading": false,
-              "responsiveBehavior": "hug",
-              "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "buttonVariant": "PRIMARY",
-              "placement": "CENTER"
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "Restaurants in NY_restaurants_newyork",
-              "name": "restaurants_newyork",
+              "id": "Fast Food Restaurants in NY_get_fastfood",
+              "name": "get_fastfood",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
@@ -450,7 +417,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Restaurants in NY",
+        "id": "Fast Food Restaurants in NY",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -461,5 +428,5 @@
     "isHidden": false
   },
   "deleted": false,
-  "gitSyncId": "6439dec4045dab1e3f189e52_6439e061045dab1e3f189e59"
+  "gitSyncId": "64404c32a5311c51f2047744_64404d29a5311c51f2047760"
 }
