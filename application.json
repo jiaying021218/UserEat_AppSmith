@@ -15,6 +15,10 @@
     {
       "id": "Customer Place Order",
       "isDefault": false
+    },
+    {
+      "id": "Burger Express Food Employee",
+      "isDefault": false
     }
   ],
   "viewMode": false,

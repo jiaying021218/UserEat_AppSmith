@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_orders",
+    "name": "get_menus",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/j/restaurants/11/orders"
+        "url": "web:4000/b/menus/9"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Burger Express Order",
+    "pageId": "Burger Express Food Employee",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Burger Express Order_get_orders",
+  "id": "Burger Express Food Employee_get_menus",
   "deleted": false,
-  "gitSyncId": "6439dec4045dab1e3f189e52_6439def4045dab1e3f189e55"
+  "gitSyncId": "643f38122880f76fc89220bd_643f5b3fe5a5f95eb9890c08"
 }
