@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Ben-1 Restaurants in NY",
-    "slug": "ben-1-restaurants-in-ny",
+    "name": "Restaurants in NY",
+    "slug": "restaurants-in-ny",
     "layouts": [
       {
         "viewMode": false,
@@ -328,7 +328,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Ben-1 Restaurants in NY_restaurants_newyork",
+              "id": "Restaurants in NY_restaurants_newyork",
               "name": "restaurants_newyork",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -339,7 +339,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Ben-1 Restaurants in NY",
+        "id": "Restaurants in NY",
         "deleted": false,
         "policies": [],
         "userPermissions": []
